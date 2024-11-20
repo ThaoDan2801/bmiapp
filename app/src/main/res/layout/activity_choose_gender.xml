@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    tools:context=".view.ChooseGenderActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextViewStyleBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:text="@string/ChooseGender_A_01"
+        android:textSize="@dimen/sp_24" />
+
+    <LinearLayout
+        android:id="@+id/layout_choose_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_female"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/img_female_gender_on" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_male"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/img_male_gender_off" />
+    </LinearLayout>
+
+    <com.monk.bmi.custom_layout.SegmentView
+        android:id="@+id/segment_view"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@id/layout_choose_gender"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:gravity="center"
+        app:numSegments="2"
+        app:selectedBackgroundColor="@color/white"
+        app:selectedIndex="0"
+        app:textAppearance="@style/TextViewStyleRegular" />
+
+    <include
+        android:id="@+id/btn_next"
+        layout="@layout/layout_button_next_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_30sdp" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_history_bmi"
+        android:layout_marginHorizontal="@dimen/dimen_standard_space"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/dimen_standard_space"
+        android:layout_height="match_parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/History_A_02"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/sp_24"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        style="@style/TextViewStyleBold"/>
+</RelativeLayout>

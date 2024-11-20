@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">BMIApp</string>
+
+    <string name="ChooseGender_A_01">Choose One</string>
+    <string name="ChooseGender_A_02">Female</string>
+    <string name="ChooseGender_A_03">Male</string>
+
+    <string name="ChooseAge_A_01">Your age</string>
+    <string name="ChooseAge_A_02">Years</string>
+    <string name="ChooseAge_A_03">0 Years</string>
+    <string name="ChooseAge_A_04">Please indicate your age</string>
+
+    <string name="ChooseWeightAndHeight_A_01">Your weight and height</string>
+    <string name="ChooseWeightAndHeight_A_02">Weight</string>
+    <string name="ChooseWeightAndHeight_A_03">00.00</string>
+    <string name="ChooseWeightAndHeight_A_04">Kg</string>
+    <string name="ChooseWeightAndHeight_A_05">Height</string>
+    <string name="ChooseWeightAndHeight_A_06">Cm</string>
+    <string name="ChooseWeightAndHeight_A_07">Please enter enough indexes</string>
+
+    <string name="ResultBMI_A_01">Your BMI result</string>
+    <string name="ResultBMI_A_02">Weight</string>
+    <string name="ResultBMI_A_03">Kg</string>
+    <string name="ResultBMI_A_04">Height</string>
+    <string name="ResultBMI_A_05">Cm</string>
+    <string name="ResultBMI_A_06">BMI</string>
+    <string name="ResultBMI_A_07">Note:</string>
+    <string name="ResultBMI_A_08">Enter your memo...</string>
+    <string name="ResultBMI_A_09">Save</string>
+    <string name="ResultBMI_A_10">Thinness</string>
+    <string name="ResultBMI_A_11">Underweight</string>
+    <string name="ResultBMI_A_12">Normal</string>
+    <string name="ResultBMI_A_13">Overweight</string>
+    <string name="ResultBMI_A_14">Obesity</string>
+    <string name="ResultBMI_A_15">The data has been saved successfully</string>
+
+    <string name="Home_A_01">BMI Calculator</string>
+    <string name="Home_A_02"><u>What is Body Mass Index (BMI)? </u></string>
+    <string name="Home_A_03">Calculate BMI</string>
+
+    <string name="Dialog_Explain_A_01">BMI</string>
+    <string name="Dialog_Explain_A_02">If your BMI is less than 18.5, it falls within the underweight range. If your BMI is 18.5 to 24.9, it falls within the Healthy Weight range. If your BMI is 25.0 to 29.9, it falls within the overweight range. If your BMI is 30.0 or higher, it falls within the obese range.</string>
+    <string name="Dialog_Explain_A_03">Close</string>
+
+    <string name="AnswerQuestion_A_01">Q/A</string>
+    <string name="AnswerQuestion_A_02">What is Body Mass Index (BMI)?</string>
+    <string name="AnswerQuestion_A_03">Body mass index, or BMI, gives an indication of your body size.</string>
+    <string name="AnswerQuestion_A_04">BMI is calculated using your weight and height (your weight divided by your height squared). Along with several other factors, like your blood pressure and cholesterol, BMI can help estimate your risk of a heart attack or stroke.</string>
+    <string name="AnswerQuestion_A_05">The formula is - BMI = (Weight in kilograms) divided by (Height in metres squared)</string>
+
+    <string name="HomeDrawer_A_01">General</string>
+    <string name="HomeDrawer_A_02">Calculate BMI</string>
+    <string name="HomeDrawer_A_03">History</string>
+    <string name="HomeDrawer_A_04">Other</string>
+    <string name="HomeDrawer_A_05">Privacy and Policy</string>
+    <string name="HomeDrawer_A_06">Setting</string>
+    <string name="HomeDrawer_A_07">Share</string>
+
+    <string name="Policy_A_01">Policy</string>
+
+    <string name="Setting_A_01">Setting</string>
+    <string name="Setting_A_02">Choose One</string>
+    <string name="Setting_A_03">Your age</string>
+
+    <string name="History_A_01">History</string>
+    <string name="History_A_02">No data</string>
+    <string name="History_A_03">Items has been delete successfully!</string>
+
+    <string name="Dialog_Delete_Item_A_01">Delete</string>
+    <string name="Dialog_Delete_Item_A_02">Memo:</string>
+    <string name="Dialog_Delete_Item_A_03">Check your BMI</string>
+<!--    <string name="Dialog_Delete_Item_A_03">Check your BMI (body mass index) and find out if you\'re underweight, overweight.</string>-->
+</resources>

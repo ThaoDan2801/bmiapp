@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:valueFrom="#F15F79" android:valueTo="#E4A7B2" android:duration="300"/>
+</selector>

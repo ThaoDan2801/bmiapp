@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    tools:context=".view.AnswerQuestionActivity">
+
+    <com.monk.bmi.custom_layout.ToolbarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        style="@style/TextViewStyleBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="@dimen/dimen_standard_space"
+        android:text="@string/AnswerQuestion_A_02"
+        android:textSize="@dimen/sp_20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_content_start"
+            style="@style/TextViewStyleRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_standard_space"
+            android:layout_marginTop="@dimen/dimen_line_space"
+            android:gravity="start|center"
+            android:justificationMode="inter_word"
+            android:text="@string/AnswerQuestion_A_03"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/sp_20" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_content_centre"
+            style="@style/TextViewStyleRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_standard_space"
+            android:layout_marginTop="@dimen/dimen_line_space"
+            android:gravity="start|center"
+            android:justificationMode="inter_word"
+            android:text="@string/AnswerQuestion_A_04"
+            android:textSize="@dimen/sp_20" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_content_end"
+            style="@style/TextViewStyleRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_standard_space"
+            android:layout_marginTop="@dimen/dimen_line_space"
+            android:gravity="start|center"
+            android:justificationMode="inter_word"
+            android:text="@string/AnswerQuestion_A_05"
+            android:textSize="@dimen/sp_20" />
+
+    </LinearLayout>
+</RelativeLayout>

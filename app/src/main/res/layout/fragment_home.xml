@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_standard_space">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/layout_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:fitsSystemWindows="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextViewStyleBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:text="@string/ChooseWeightAndHeight_A_02"
+                            android:textSize="@dimen/sp_16" />
+
+                        <SeekBar
+                            android:id="@+id/seekBar_weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_270sdp"
+                            android:layout_gravity="center"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="0dp"
+                            android:progressDrawable="@drawable/custom_bg_progress_weight"
+                            android:rotation="270"
+                            android:splitTrack="false"
+                            android:thumb="@android:color/transparent" />
+
+                        <EditText
+                            android:id="@+id/tv_weight"
+                            style="@style/TextViewStyleBold"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/background_text_view"
+                            android:digits="0123456789.,"
+                            android:gravity="center"
+                            android:hint="@string/ChooseWeightAndHeight_A_03"
+                            android:inputType="numberDecimal"
+                            android:padding="@dimen/_16sdp"
+                            android:textColor="@color/colorText"
+                            android:textColorHint="@color/colorText" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextViewStyleBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/dimen_medium_space"
+                            android:gravity="center"
+                            android:text="@string/ChooseWeightAndHeight_A_04"
+                            android:textColor="@color/colorText"
+                            android:textSize="@dimen/sp_24" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextViewStyleBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:text="@string/ChooseWeightAndHeight_A_05"
+                            android:textSize="@dimen/sp_16" />
+
+                        <SeekBar
+                            android:id="@+id/seekBar_height"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_270sdp"
+                            android:layout_gravity="center"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="0dp"
+                            android:progressDrawable="@drawable/custom_bg_progress_height"
+                            android:rotation="270"
+                            android:splitTrack="false"
+                            android:thumb="@android:color/transparent" />
+
+                        <EditText
+                            android:id="@+id/tv_height"
+                            style="@style/TextViewStyleBold"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/background_text_view"
+                            android:gravity="center"
+                            android:hint="@string/ChooseWeightAndHeight_A_03"
+                            android:inputType="numberDecimal|numberSigned"
+                            android:padding="@dimen/_16sdp"
+                            android:textColor="@color/colorText"
+                            android:textColorHint="@color/colorText"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextViewStyleBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/dimen_medium_space"
+                            android:gravity="center"
+                            android:text="@string/ChooseWeightAndHeight_A_06"
+                            android:textColor="@color/colorText"
+                            android:textSize="@dimen/sp_24" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/img_female_gender_on" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_q_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_view"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_toStartOf="@id/tv_q_a"
+                    android:src="@drawable/icon_tip" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_q_a"
+                    style="@style/TextViewStyleRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:text="@string/Home_A_02"
+                    android:textColor="@color/colorText" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_logo"
+                android:layout_width="@dimen/_266sdp"
+                android:layout_height="@dimen/_169sdp"
+                android:layout_below="@id/layout_q_a"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo" />
+
+            <RelativeLayout
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_logo"
+                android:layout_marginHorizontal="@dimen/dimen_huge_space"
+                android:background="@drawable/background_btn_save"
+                android:padding="@dimen/_15sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyleBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/Home_A_03"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_24" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dimen_standard_space"
+                    android:src="@drawable/icon_next" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

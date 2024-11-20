@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="@dimen/dimen_standard_space"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_standard_space">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_toStartOf="@id/tv_title"
+                android:src="@drawable/icon_info_3x" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                style="@style/TextViewStyleBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/Dialog_Explain_A_01" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_content"
+            style="@style/TextViewStyleRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_title"
+            android:layout_marginTop="@dimen/dimen_standard_space"
+            android:gravity="start|center"
+            android:justificationMode="inter_word"
+            android:paddingHorizontal="@dimen/dimen_huge_space"
+            android:text="@string/Dialog_Explain_A_02"
+            android:textSize="@dimen/sp_20" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_close"
+            style="@style/TextViewStyleBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/dimen_huge_space"
+            android:text="@string/Dialog_Explain_A_03"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/sp_20" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

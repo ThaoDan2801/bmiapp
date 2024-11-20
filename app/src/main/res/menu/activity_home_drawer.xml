@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/HomeDrawer_A_01">
+        <menu>
+            <item
+                android:id="@+id/calculate_bmi"
+                android:icon="@drawable/icon_bmi"
+                android:title="@string/HomeDrawer_A_02" />
+            <item
+                android:id="@+id/history"
+                android:icon="@drawable/icon_history"
+                android:title="@string/HomeDrawer_A_03" />
+        </menu>
+    </item>
+
+    <item android:title="@string/HomeDrawer_A_04">
+        <menu>
+            <item
+                android:id="@+id/policy"
+                android:icon="@drawable/icon_policy"
+                android:title="@string/HomeDrawer_A_05" />
+            <item
+                android:id="@+id/setting"
+                android:icon="@drawable/icon_setting"
+                android:title="@string/HomeDrawer_A_06" />
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/icon_share"
+                android:title="@string/HomeDrawer_A_07" />
+        </menu>
+    </item>
+</menu>

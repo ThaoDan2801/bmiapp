@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextViewStyleRegular">
+        <item name="android:fontFamily">@font/inria_sans_regular</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextViewStyleBold">
+        <item name="android:fontFamily">@font/inria_sans_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

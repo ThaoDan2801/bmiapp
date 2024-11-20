@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_choose_on"
+        style="@style/TextViewStyleBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_huge_space"
+        android:text="@string/Setting_A_02"
+        android:textSize="@dimen/sp_24" />
+
+    <com.monk.bmi.custom_layout.SegmentView
+        android:id="@+id/sv_choose_gender"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@id/tv_choose_on"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/dimen_bottom_button_space"
+        android:gravity="center"
+        app:numSegments="2"
+        app:selectedBackgroundColor="@color/white"
+        app:selectedIndex="0"
+        app:textAppearance="@style/TextViewStyleRegular" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_age"
+        style="@style/TextViewStyleBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sv_choose_gender"
+        android:layout_margin="@dimen/dimen_huge_space"
+        android:text="@string/Setting_A_03"
+        android:textSize="@dimen/sp_24" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_below="@id/tv_age"
+        android:layout_marginHorizontal="@dimen/dimen_bottom_button_space"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:progressDrawable="@drawable/custom_bg_progress_age"
+        android:splitTrack="false"
+        android:thumb="@android:color/transparent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_age_input"
+        style="@style/TextViewStyleBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_standard_space"
+        android:text="@string/ChooseAge_A_03" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_save"
+        style="@style/TextViewStyleBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/dimen_huge_space"
+        android:layout_marginTop="@dimen/dimen_standard_space"
+        android:layout_marginBottom="@dimen/dimen_standard_space"
+        android:background="@drawable/background_btn_save"
+        android:gravity="center"
+        android:padding="@dimen/_15sdp"
+        android:text="@string/ResultBMI_A_09"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_24" />
+
+</RelativeLayout>

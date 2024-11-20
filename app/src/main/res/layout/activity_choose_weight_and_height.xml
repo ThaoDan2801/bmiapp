@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    tools:context=".view.ChooseWeightAndHeightActivity">
+
+    <com.monk.bmi.custom_layout.ToolbarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextViewStyleBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="@dimen/dimen_standard_space"
+        android:text="@string/ChooseWeightAndHeight_A_01"
+        android:textSize="@dimen/sp_24" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyleBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/ChooseWeightAndHeight_A_02"
+                    android:textSize="@dimen/sp_16" />
+
+                <SeekBar
+                    android:id="@+id/seekBar_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_270sdp"
+                    android:layout_gravity="center"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:progressDrawable="@drawable/custom_bg_progress_weight"
+                    android:rotation="270"
+                    android:splitTrack="false"
+                    android:thumb="@android:color/transparent" />
+
+                <EditText
+                    android:id="@+id/tv_weight"
+                    style="@style/TextViewStyleBold"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_text_view"
+                    android:digits="0123456789.,"
+                    android:gravity="center"
+                    android:hint="@string/ChooseWeightAndHeight_A_03"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/_16sdp"
+                    android:textColor="@color/colorText"
+                    android:textColorHint="@color/colorText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyleBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_standard_space"
+                    android:gravity="center"
+                    android:text="@string/ChooseWeightAndHeight_A_04"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/sp_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyleBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/ChooseWeightAndHeight_A_05"
+                    android:textSize="@dimen/sp_16" />
+
+                <SeekBar
+                    android:id="@+id/seekBar_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_270sdp"
+                    android:layout_gravity="center"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:progressDrawable="@drawable/custom_bg_progress_height"
+                    android:rotation="270"
+                    android:splitTrack="false"
+                    android:thumb="@android:color/transparent" />
+
+                <EditText
+                    android:id="@+id/tv_height"
+                    style="@style/TextViewStyleBold"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_text_view"
+                    android:gravity="center"
+                    android:hint="@string/ChooseWeightAndHeight_A_03"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="@dimen/_16sdp"
+                    android:textColor="@color/colorText"
+                    android:textColorHint="@color/colorText"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyleBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_standard_space"
+                    android:gravity="center"
+                    android:text="@string/ChooseWeightAndHeight_A_06"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/sp_24" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/img_female_gender_on" />
+    </FrameLayout>
+
+    <include
+        android:id="@+id/btn_next"
+        layout="@layout/layout_button_next_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_30sdp" />
+
+</RelativeLayout>
